@@ -26,11 +26,11 @@ After do |scenario|
   $driver.driver_quit
 end
 
-at_exit do
-  ReportBuilder.configure do |config|
-      config.input_path = 'reports/reports.json'
-      config.report_path = 'reports/reports'
-      config.report_title = "Tests Execution Report"
-  end
-  ReportBuilder.build_report
+# at_exit do
+#   ReportBuilder.configure do |config|
+#       config.input_path = 'reports/reports.json'
+#       config.report_path = 'reports/reports'
+#       config.report_title = "Tests Execution Report"
+#   end
+#   ReportBuilder.build_report
 end
