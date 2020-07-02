@@ -1,0 +1,135 @@
+[
+  {
+    "uri": "features/core/features/pesquisa/pesquisa.feature",
+    "id": "pesquisa-de-imoveis",
+    "keyword": "Funcionalidade",
+    "name": "Pesquisa de imoveis",
+    "description": "Eu como cliente\nQuero pesquisar imóveis que esteja à venda ou aluguel\nPara contactar o agent que desejo aludar ou comprar ",
+    "line": 4,
+    "tags": [
+      {
+        "name": "@pesquisa",
+        "line": 3
+      }
+    ],
+    "comments": [
+      {
+        "value": "#encoding: utf-8",
+        "line": 2
+      }
+    ],
+    "elements": [
+      {
+        "keyword": "Contexto",
+        "name": "Acessar a tela de pesquisa",
+        "description": "",
+        "line": 9,
+        "type": "background",
+        "before": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25276945000
+            }
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o usuario acesse a tela home",
+            "line": 10,
+            "match": {
+              "location": "features/core/step_definitions/pesquisa/pesquisa.rb:1"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 713649000
+            }
+          },
+          {
+            "keyword": "E ",
+            "name": "toque no campo de pesquisa",
+            "line": 11,
+            "match": {
+              "location": "features/core/step_definitions/pesquisa/pesquisa.rb:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2129870000
+            }
+          }
+        ]
+      },
+      {
+        "id": "pesquisa-de-imoveis;pesquisar-imovel",
+        "keyword": "Cenario",
+        "name": "Pesquisar imovel",
+        "description": "",
+        "line": 13,
+        "type": "scenario",
+        "tags": [
+          {
+            "name": "@pesquisa",
+            "line": 3
+          },
+          {
+            "name": "@doing",
+            "line": 12
+          }
+        ],
+        "steps": [
+          {
+            "keyword": "Dado ",
+            "name": "que o usuario preencha o local de pesquisa ex: \"Compton\"",
+            "line": 14,
+            "match": {
+              "location": "features/core/step_definitions/pesquisa/pesquisa.rb:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10030415000
+            }
+          },
+          {
+            "keyword": "Quando ",
+            "name": "ele escolher o local sugerido",
+            "line": 15,
+            "match": {
+              "location": "features/core/step_definitions/pesquisa/pesquisa.rb:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2984537000
+            }
+          },
+          {
+            "keyword": "Entao ",
+            "name": "o botao view list deve ser apresentado",
+            "line": 16,
+            "match": {
+              "location": "features/core/step_definitions/pesquisa/pesquisa.rb:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1909322000
+            }
+          }
+        ],
+        "after": [
+          {
+            "match": {
+              "location": "features/support/hooks.rb:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2975402000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

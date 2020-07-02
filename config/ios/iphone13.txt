@@ -1,0 +1,19 @@
+[caps]
+platformName = "iOS"
+platformVersion = "13.4"
+deviceName = "iPhone 8"
+app = './app/ios/homolog.app.zip'
+udid = "EB3F1105-B251-42BC-97B1-AE825FBA1721" 
+bundleId = "br.com.digiohml"
+updatedWDABundleId = "io.appium.WebDriverAgentRunner"
+xcodeOrgId = "CE2N9W8684"
+xcodeSigningId = "iPhone Developer"
+autoAcceptAlerts = true
+
+
+
+[appium_lib]
+wait = 20
+server_url = "http://127.0.0.1:4723/wd/hub"
+sauce_username = ""
+sauce_access_key = ""

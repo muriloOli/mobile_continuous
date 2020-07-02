@@ -1,0 +1,25 @@
+ios:
+  acquisition:
+    input_name:
+      tipo_busca: 'ID'
+      value: 'name_text'
+
+android:
+  pesquisa:
+    edit_text:
+      tipo_busca: 'ID'
+      value: 'search_edit_text'
+    location:
+      tipo_busca: 'ID'
+      value: 'location'
+    list:
+      tipo_busca: 'ID'
+      value: 'view_list_label'
+    Favorite:
+      tipo_busca: 'XPATH'
+      value: '//*[@text="Favorite Listings"]'
+    
+
+    
+      
+      

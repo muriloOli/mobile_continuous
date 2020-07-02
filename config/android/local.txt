@@ -1,0 +1,13 @@
+[caps]
+platformName = "Android"
+deviceName = "emulator-5554"
+app = "./app/android/base.apk"
+appPackage = "com.move.realtor"
+appWaitDuration = 20000
+appWaitActivity = 'com.move.realtor.onboarding.OnBoardingActivity'
+
+[appium_lib]
+wait = 20
+server_url = "http://127.0.0.1:4723/wd/hub"
+sauce_username = ""
+sauce_access_key = ""

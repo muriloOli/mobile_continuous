@@ -1,0 +1,15 @@
+ios:
+  home:
+    logo:
+      tipo_busca: 'ID'
+      value: 'name_text'
+      
+android:
+  home:
+    logo:
+      tipo_busca: 'ID'
+      value: 'brand_logo'
+    input_address:
+      tipo_busca: 'ID'
+      value: "on_boarding_location"
+      
