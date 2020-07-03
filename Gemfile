@@ -29,7 +29,7 @@ gem 'rspec-expectations'
 gem 'rspec'
 
 #Layout melhorado do test report
-# gem 'report_builder'
+gem 'report_builder'
 
 gem 'faker'
 
