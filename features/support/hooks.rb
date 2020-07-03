@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-# require 'report_builder'
+ require 'report_builder'
 
 Before do
   @home_screen = HomeScreen.new
@@ -26,11 +26,11 @@ After do |scenario|
   $driver.driver_quit
 end
 
-# at_exit do
-#   ReportBuilder.configure do |config|
-#       config.input_path = 'reports/reports.json'
-#       config.report_path = 'reports/reports'
-#       config.report_title = "Tests Execution Report"
-#   end
-#   ReportBuilder.build_report
-# end
+at_exit do
+  ReportBuilder.configure do |config|
+      config.input_path = 'reports/reports.json'
+      config.report_path = 'reports/reports'
+      config.report_title = "Tests Execution Report"
+  end
+  ReportBuilder.build_report
+end
