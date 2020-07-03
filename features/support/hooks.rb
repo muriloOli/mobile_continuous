@@ -1,5 +1,5 @@
 # frozen_string_literal: true
-require 'report_builder'
+# require 'report_builder'
 
 Before do
   @home_screen = HomeScreen.new
