@@ -3,6 +3,9 @@ pipeline{
         docker {
             image 'qaninja/rubywd'
         }
+        triggers {
+        cron('0 12 * * 1-5')
+        }
     }
     
     stages{
@@ -27,8 +30,8 @@ pipeline{
         }
         stage('UAT'){
             steps {
-                echo 'Wait for User acceptance'
-                input(message:'Go to production?', ok: 'Yes')
+                echo 'Wait for User Acceptance'
+                input(message:'Go to Prod?', ok: 'Yes')
             }
         }
         stage('Production'){
