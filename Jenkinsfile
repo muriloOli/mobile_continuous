@@ -3,10 +3,6 @@ pipeline{
         docker {
             image 'qaninja/rubywd'
         }
-        triggers {
-        cron('0 12 * * 1-5')
-        }
-    }
     
     stages{
         stage('Biuld'){
