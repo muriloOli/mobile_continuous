@@ -3,6 +3,7 @@ pipeline{
         docker {
             image 'qaninja/rubywd'
         }
+    }
     
     stages{
         stage('Biuld'){
